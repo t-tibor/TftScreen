@@ -49,7 +49,7 @@ LCD_RD  -   A0      -   PC0
 
 
 #define TFTSCREEN_SET_CSX_HIGH_mac()            do{ gd_TFTSCREEN_CSX_PORT_u8 |=  gd_TFTSCREEN_CSX_MASK_u8; }while(0)  
-#define TFTSCREEN_SET_CSX_HIGH_mac()            do{ gd_TFTSCREEN_CSX_PORT_u8 &=  (uint8_t)(~gd_TFTSCREEN_CSX_MASK_u8); }while(0)  
+#define TFTSCREEN_SET_CSX_LOW_mac()             do{ gd_TFTSCREEN_CSX_PORT_u8 &=  (uint8_t)(~gd_TFTSCREEN_CSX_MASK_u8); }while(0)  
 
 #define gd_TFTSCREEN_SET_DATA_mac(f_data_u8)    do                                                                              \
                                                 {                                                                               \
