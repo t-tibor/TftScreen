@@ -5,10 +5,10 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
-#define md_LED_DDR_u8		DDRB
-#define md_LED_DDR_PIN_u8	DDB5
-#define md_LED_PORT_u8 		PORTB
-#define md_LED_PIN_u8		PORTB5
+#define md_LED_DDR_u8		(DDRB)
+#define md_LED_DDR_PIN_u8	(DDB5)
+#define md_LED_PORT_u8 		(PORTB)
+#define md_LED_PIN_u8		(PORTB5)
 
 
 void m_InitLed_vd(void)

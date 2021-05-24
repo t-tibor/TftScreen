@@ -63,7 +63,7 @@
 #define gd_ILI9488_CMD_RDID4_u8                 ((uint8_t)0xD3)
 
 
-
+extern void g_TFT_Init_vd(void);
 
 
 

@@ -5,6 +5,7 @@
 #include <util/delay.h>
 
 #include <Board.h>
+#include <TftScreen.h>
 
 #define md_WAIT_TIME_u32	((uint32_t)3000)
 
@@ -21,7 +22,7 @@ int main(void)
 		m_ClearLed_vd();
 		_delay_ms( (double)md_WAIT_TIME_u32 );
 
-		m_UartWriteString_vd("Hello World!\r\n");
+		g_TFT_Init_vd();
 	}
 
 	return 0;
