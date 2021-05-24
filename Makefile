@@ -30,6 +30,7 @@ OBJECT_FOLDER	= ./obj
 SRC 	:= $(wildcard $(SOURCE_FOLDER)/*.c) 
 CXXSRC	:= $(wildcard $(SOURCE_FOLDER)/*.cpp)
 ASRC 	:= $(wildcard $(SOURCE_FOLDER)/*.S)
+CINCS	:= -I$(SOURCE_FOLDER)
 # Define all object files.
 OBJ = $(patsubst $(SOURCE_FOLDER)/%.c, $(OBJECT_FOLDER)/%.o, $(SRC))
 # Define all listing files.
